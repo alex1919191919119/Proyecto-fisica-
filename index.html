@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PAGINA PRINCIPAL</title>
+<style>
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .card {
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+  .card:hover .flipper {
+    transform: rotateY(180deg);
+  }
+  .flipper {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+  .front, .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .back {
+    transform: rotateY(180deg);
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <a href="infodos.html">
+        <div class="card" style="width: 500px; height: 500px;">
+            <div class="flipper">
+                <div class="front" style="background-image: url(logonw.png)"></div>
+                <div class="back" style="background-image: url('https://kaiserscience.wordpress.com/wp-content/uploads/2015/09/isaac-newton-animated-gif.gif')"></div>
+            </div>
+        </div>
+    </a>
+    <a href="tresde.html">
+        <div class="card" style="width: 500px; height: 500px;">
+            <div class="flipper">
+                <div class="front" style="background-image: url(logoleyes.png)"></div>
+                <div class="back" style="background-image: url(imgley.gif)"></div>
+            </div>
+        </div>
+    </a>
+     <a href="info.html">
+        <div class="card" style="width: 500px; height: 500px;">
+            <div class="flipper">
+                <div class="front" style="background-image: url(logoinf.png)"></div>
+                <div class="back" style="background-image: url(imginfo.gif)"></div>
+            </div>
+        </div>
+    </a>
+   
+<body style="background-color: rgba(25, 30, 51, 0.954);">
+</body>
+  </div>
+</html>
+
